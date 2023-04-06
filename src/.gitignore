@@ -1,0 +1,12 @@
+.vs
+*.cache
+bin
+obj
+*.tss
+*.suo
+*.user
+*.ncb
+*.sdf
+*.opensdf
+
+*.prj/*.xml

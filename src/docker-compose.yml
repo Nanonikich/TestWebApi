@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  backend:
+    image: ${DOCKER_REGISTRY-}serviceapi
+    build:
+      context: .
+      dockerfile: service.api.prj/Dockerfile
+  
+  client:
+    image: client
+    build:
+      context: ./service.client.prj
+      dockerfile: Dockerfile
+
+  proxy:
+    image: nginx:mainline
